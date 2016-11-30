@@ -6,7 +6,39 @@ function Start-MeSsms
     param([Object]$db) 
     Ssms -E -S "(LocalDB)\$db" -nosplash   
 } 
- 
+
+#////////////////////////////////////////////////////////////////////////////// 
+# Get LocalDB Info 
+#////////////////////////////////////////////////////////////////////////////// 
+function Get-LocalDbInfo
+{ 
+    sqllocaldb i 
+}
+
+#////////////////////////////////////////////////////////////////////////////// 
+# Remove LocalDB 
+#////////////////////////////////////////////////////////////////////////////// 
+function Remove-LocalDb 
+{ 
+    Param( [string]$Name ) 
+     
+    if ($Name) 
+    { 
+      sqllocaldb p $Name 
+      sqllocaldb d $Name 
+    }  
+}
+
+#////////////////////////////////////////////////////////////////////////////// 
+# New LocalDB 
+#////////////////////////////////////////////////////////////////////////////// 
+function New-LocalDb 
+{ 
+    Param( [string]$Name ) 
+
+    sqllocaldb c $Name -s 
+}
+
 #////////////////////////////////////////////////////////////////////////////// 
 # Initialize LocalDB 
 #////////////////////////////////////////////////////////////////////////////// 
@@ -17,28 +49,10 @@ function Initialize-LocalDb
         [string]$curr 
     ) 
     # Make sure that previous database is cleaned up 
-    if ($prev) 
-    { 
-      sqllocaldb p $prev 
-      sqllocaldb d $prev 
-    } 
- 
-    # Make sure that current database is cleaned up 
-    sqllocaldb p $curr 
-    sqllocaldb d $curr 
- 
-    # Create new current database 
-    sqllocaldb c $curr -s 
+    Remove-LocalDb $prev
+
+    # Remove and create the new one
+    Remove-LocalDb $curr
+    New-LocalDb $curr
 }
 
-function New-LocalDb 
-{ 
-    Param( [string]$Name ) 
-    # Make sure that previous database is cleaned up 
-    if ($Name) 
-    { 
-      sqllocaldb p $Name 
-      sqllocaldb d $Name 
-    } 
-    sqllocaldb c $Name -s 
-}
