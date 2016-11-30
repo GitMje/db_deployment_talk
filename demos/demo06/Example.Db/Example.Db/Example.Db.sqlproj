@@ -68,6 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Example.Db.publish.xml" />
-    <None Include="SqlSchemaCompare1.scmp" />
+    <None Include="SqlSchemaCompare.Db.scmp" />
   </ItemGroup>
 </Project>
