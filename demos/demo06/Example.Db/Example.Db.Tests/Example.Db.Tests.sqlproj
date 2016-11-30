@@ -23,6 +23,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <AllowSnapshotIsolation>True</AllowSnapshotIsolation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -65,6 +66,8 @@
     <Folder Include="tSQLt\User Defined Types\" />
     <Folder Include="Assemblies\" />
     <Folder Include="Security\" />
+    <Folder Include="dboTests" />
+    <Folder Include="Deploy" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Example.Db\Example.Db.sqlproj">
@@ -230,10 +233,15 @@
     <Build Include="tSQLt\User Defined Types\Private.sql" />
     <Build Include="tSQLt\User Defined Types\AssertStringTable.sql" />
     <Build Include="Security\tSQLt.sql" />
+    <Build Include="dboTests\test that customer is updated with normal values.sql" />
+    <Build Include="Security\dboTests.sql" />
+    <PostDeploy Include="Deploy\Script.PostDeployment.Run.tSqlt.sql" />
+    <PreDeploy Include="Deploy\Script.PreDeployment1.Setup.tSqlt.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assemblies\tSQLtCLR.dll" />
-    <None Include="Example.Db.Tests.publish.xml" />
+    <None Include="Deploy\Example.Db.Tests.publish.xml" />
+    <None Include="Deploy\SqlSchemaCompare.Db.Tests.scmp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="tSQLtCLR">
@@ -244,11 +252,5 @@
       <SqlOwnerName>dbo</SqlOwnerName>
       <SqlPermissionSet>SAFE</SqlPermissionSet>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <PreDeploy Include="Script.PreDeployment1.Setup.tSqlt.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="Script.PostDeployment.Run.tSqlt.sql" />
   </ItemGroup>
 </Project>

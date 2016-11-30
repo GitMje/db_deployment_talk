@@ -25,6 +25,7 @@
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <AllowSnapshotIsolation>True</AllowSnapshotIsolation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -64,7 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Customers.sql" />
-    <Build Include="Stored Procedures\SaveCustomer.sql" />
+    <Build Include="Stored Procedures\UpdateCustomer.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Example.Db.publish.xml" />
