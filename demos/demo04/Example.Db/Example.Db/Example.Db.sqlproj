@@ -67,13 +67,19 @@
     <Build Include="Tables\Customers.sql" />
     <Build Include="Stored Procedures\UpdateCustomer.sql" />
     <Build Include="Tables\ProductColor.sql" />
-    <PostDeploy Include="Deploy\Script.PostDeployment.PushReferenceData.sql" />
+    <PostDeploy Include="Deploy\Script.PostDeployment.sql">
+      <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
+    </PostDeploy>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Deploy\Example.Db.publish.xml" />
     <None Include="Deploy\SqlSchemaCompare.scmp" />
+    <None Include="Deploy\DEV.publish.xml" />
+    <None Include="Deploy\PROD.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Deploy\Script.PostDeployment.PushTestData.sql" />
+    <SqlCmdVariable Include="Environment">
+      <DefaultValue>Development</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
   </ItemGroup>
 </Project>
