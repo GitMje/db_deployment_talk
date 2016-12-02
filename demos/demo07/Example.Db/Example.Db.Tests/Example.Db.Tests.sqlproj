@@ -253,4 +253,10 @@
       <SqlPermissionSet>SAFE</SqlPermissionSet>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="Environment">
+      <DefaultValue>Development</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
 </Project>
