@@ -1,0 +1,13 @@
+###### Basic commands:
+
+### Show active LocalDB databases 
+sqllocaldb i
+
+### Create a LocalDB database
+sqllocaldb c demo03 -s
+
+### Stop a LocalDB database
+sqllocaldb p demo03 
+
+### Delete a LocalDB database
+sqllocaldb d demo03
