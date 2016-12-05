@@ -125,7 +125,7 @@ function New-MeDatabase
 function New-MeExampleDatabase
 {
     $dacpac = ".\ExampleDb.dacpac"
-    $publishProfile = ".\ExampleDb.publish.xml"
+    $publishProfile = "..\common\ExampleDb.publish.xml"
 
     New-MeDatabase $dacpac $publishProfile
 }
@@ -137,7 +137,7 @@ function New-MeExampleDatabase
 function New-MeDevDatabase
 {
     $dacpac = ".\ExampleDb.dacpac"
-    $publishProfile = ".\Env_Dev.publish.xml"
+    $publishProfile = "..\common\Env_Dev.publish.xml"
 
     New-MeDatabase $dacpac $publishProfile
 }
@@ -149,7 +149,7 @@ function New-MeDevDatabase
 function New-MeQaDatabase
 {
     $dacpac = ".\ExampleDb.dacpac"
-    $publishProfile = ".\Env_Qa.publish.xml"
+    $publishProfile = "..\common\Env_Qa.publish.xml"
 
     New-MeDatabase $dacpac $publishProfile
 }
@@ -161,9 +161,20 @@ function New-MeQaDatabase
 function New-MeProdDatabase
 {
     $dacpac = ".\ExampleDb.dacpac"
-    $publishProfile = ".\Env_Prod.publish.xml"
+    $publishProfile = "..\common\Env_Prod.publish.xml"
 
     New-MeDatabase $dacpac $publishProfile
+}
+
+#////////////////////////////////////////////////////////////////////////////// 
+# Create all Environments Databases
+#   Usage: New-MeAllEnvDatabases
+#////////////////////////////////////////////////////////////////////////////// 
+function New-MeAllEnvDatabases
+{
+    New-MeDevDatabase
+    New-MeQaDatabase
+    New-MeProdDatabase
 }
 
 #////////////////////////////////////////////////////////////////////////////// 
@@ -172,8 +183,6 @@ function New-MeProdDatabase
 #////////////////////////////////////////////////////////////////////////////// 
 function New-MeAllDatabases
 {
-    New-MeDatabase ".\ExampleDb.dacpac" ".\ExampleDb.publish.xml"
-    New-MeDatabase ".\ExampleDb.dacpac" ".\Env_Prod.publish.xml"
-    New-MeDatabase ".\ExampleDb.dacpac" ".\Env_Qa.publish.xml"
-    New-MeDatabase ".\ExampleDb.dacpac" ".\Env_Dev.publish.xml"
+    New-MeExampleDatabase
+    New-MeAllEnvDatabases
 }

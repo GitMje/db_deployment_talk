@@ -1,5 +1,0 @@
-Pluralsight video – Visual Studio Data Tools for Developers - Deborah Kurata
-    - http://www.pluralsight.com/courses/visual-studio-data-tools-developers 
-
-Pluralsight video – 
- http://app.pluralsight.com/courses/database-delivery-best-practices
