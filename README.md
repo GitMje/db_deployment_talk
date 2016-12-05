@@ -15,7 +15,7 @@ Pluralsight courses:
     Practices](http://www.pluralsight.com/courses/database-delivery-best-practices)
 
 -   [Visual Studio Data Tools for
-    Developers](http://www.pluralsight.com/courses/visual-studio-data-tools-developers )
+    Developers](http://app.pluralsight.com/courses/visual-studio-data-tools-developers)
 
 -   [Unit Testing T-SQL Code with
     tSQLt](https://app.pluralsight.com/library/courses/unit-testing-t-sql-tsqlt)
