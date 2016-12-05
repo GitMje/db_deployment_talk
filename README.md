@@ -6,7 +6,7 @@ Database Delivery
 Tools:
 ------
 
--   [SSDT download](Download :http://msdn.microsoft.com/enus/data/hh297027)
+-   [SSDT download](http://msdn.microsoft.com/enus/data/hh297027)
 
  
 
