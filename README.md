@@ -3,13 +3,15 @@ Database Delivery
 
  
 
-References:
------------
+Tools:
+------
+
+-   [SSDT download](Download :http://msdn.microsoft.com/enus/data/hh297027)
+
+ 
 
 Pluralsight courses:
 --------------------
-
- 
 
 -   [Database Delivery Best
     Practices](http://www.pluralsight.com/courses/database-delivery-best-practices)

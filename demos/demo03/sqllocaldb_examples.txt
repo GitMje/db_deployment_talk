@@ -11,3 +11,6 @@ sqllocaldb p demo03
 
 ### Delete a LocalDB database
 sqllocaldb d demo03
+
+## How to access from SSMS
+(localdb)\demo03
