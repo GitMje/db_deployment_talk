@@ -10,6 +10,14 @@ Tools:
 
  
 
+Free videos:
+------------
+
+-   [The elephant in the room: Continuous Delivery for
+    Databases](https://vimeo.com/131637362)
+
+ 
+
 Pluralsight courses:
 --------------------
 

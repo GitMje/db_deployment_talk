@@ -1,4 +1,10 @@
 #////////////////////////////////////////////////////////////////////////////// 
+# Variables 
+#////////////////////////////////////////////////////////////////////////////// 
+$baseDir = "C:\src\github\db_deployment_talk"
+$commonDir = "$baseDir\demos\common" 
+
+#////////////////////////////////////////////////////////////////////////////// 
 # Start SSMS 
 #////////////////////////////////////////////////////////////////////////////// 
 function Start-MeSsms 
@@ -87,15 +93,25 @@ function Remove-MeDatabase
 }
 
 #////////////////////////////////////////////////////////////////////////////// 
+# Remove (Drop) all env Databases
+#   Usage: Remove-MeAllEnvDatabases
+#////////////////////////////////////////////////////////////////////////////// 
+function Remove-MeAllEnvDatabases
+{
+    Remove-MeDatabase "(LocalDb)\environments" "Prod"
+    Remove-MeDatabase "(LocalDb)\environments" "QA"
+    Remove-MeDatabase "(LocalDb)\environments" "Dev"
+}
+
+
+#////////////////////////////////////////////////////////////////////////////// 
 # Remove (Drop) all Databases
 #   Usage: Remove-MeAllDatabases
 #////////////////////////////////////////////////////////////////////////////// 
 function Remove-MeAllDatabases
 {
     Remove-MeDatabase "(LocalDb)\demo" "ExampleDb"
-    Remove-MeDatabase "(LocalDb)\environments" "Prod"
-    Remove-MeDatabase "(LocalDb)\environments" "QA"
-    Remove-MeDatabase "(LocalDb)\environments" "Dev"
+    Remove-MeAllEnvDatabases
 }
 
 #////////////////////////////////////////////////////////////////////////////// 
@@ -124,8 +140,8 @@ function New-MeDatabase
 #////////////////////////////////////////////////////////////////////////////// 
 function New-MeExampleDatabase
 {
-    $dacpac = ".\ExampleDb.dacpac"
-    $publishProfile = "..\common\ExampleDb.publish.xml"
+    $dacpac = "$commonDir\ExampleDb.dacpac"
+    $publishProfile = "$commonDir\ExampleDb.publish.xml"
 
     New-MeDatabase $dacpac $publishProfile
 }
@@ -136,8 +152,8 @@ function New-MeExampleDatabase
 #////////////////////////////////////////////////////////////////////////////// 
 function New-MeDevDatabase
 {
-    $dacpac = ".\ExampleDb.dacpac"
-    $publishProfile = "..\common\Env_Dev.publish.xml"
+    $dacpac = "$commonDir\ExampleDb.dacpac"
+    $publishProfile = "$commonDir\Env_Dev.publish.xml"
 
     New-MeDatabase $dacpac $publishProfile
 }
@@ -148,8 +164,8 @@ function New-MeDevDatabase
 #////////////////////////////////////////////////////////////////////////////// 
 function New-MeQaDatabase
 {
-    $dacpac = ".\ExampleDb.dacpac"
-    $publishProfile = "..\common\Env_Qa.publish.xml"
+    $dacpac = "$commonDir\ExampleDb.dacpac"
+    $publishProfile = "$commonDir\Env_Qa.publish.xml"
 
     New-MeDatabase $dacpac $publishProfile
 }
@@ -160,8 +176,8 @@ function New-MeQaDatabase
 #////////////////////////////////////////////////////////////////////////////// 
 function New-MeProdDatabase
 {
-    $dacpac = ".\ExampleDb.dacpac"
-    $publishProfile = "..\common\Env_Prod.publish.xml"
+    $dacpac = "$commonDir\ExampleDb.dacpac"
+    $publishProfile = "$commonDir\Env_Prod.publish.xml"
 
     New-MeDatabase $dacpac $publishProfile
 }
