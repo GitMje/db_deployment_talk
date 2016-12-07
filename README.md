@@ -35,6 +35,7 @@ Pluralsight courses:
 
      
 
- 
+Links:
 
- 
+[Setting up SSDT Database Projects and
+tSQLt](<https://kzhendev.wordpress.com/2014/01/08/setting-up-ssdt-database-projects-and-tsqlt/)
