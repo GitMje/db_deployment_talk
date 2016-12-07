@@ -36,6 +36,17 @@ Pluralsight courses:
      
 
 Links:
+------
 
 [Setting up SSDT Database Projects and
-tSQLt](<https://kzhendev.wordpress.com/2014/01/08/setting-up-ssdt-database-projects-and-tsqlt/)
+tSQLt](%3Chttps://kzhendev.wordpress.com/2014/01/08/setting-up-ssdt-database-projects-and-tsqlt/)
+
+[Introducing LocalDB, an improved SQL
+Express](https://blogs.msdn.microsoft.com/sqlexpress/2011/07/12/introducing-localdb-an-improved-sql-express/)
+
+ 
+
+Books:
+------
+
+[Refactoring Databases: Evolutionary Database Design](http://a.co/goMDrb9)

@@ -13,10 +13,10 @@ BEGIN
 
   	  UPDATE [Customers]
 		SET 
-		  FirstName = @FirstName,
-		  LastName = @LastName,
-		  Age = @Age
-        WHERE CustomerId = @CustomerId
+		  [FirstName] = @FirstName,
+		  [LastName] = @LastName,
+		  [Age] = @Age
+        WHERE [CustomerId] = @CustomerId
       COMMIT TRANSACTION;
     END TRY
     BEGIN CATCH
