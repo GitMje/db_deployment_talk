@@ -7,7 +7,7 @@
     <Name>Example.Db</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{7f55099a-55c2-46cc-be9b-7a1b7696e9d2}</ProjectGuid>
+    <ProjectGuid>{884b752f-bae3-4853-9aef-56d85e823ec9}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
@@ -65,16 +65,17 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Customers.sql" />
-    <Build Include="Stored Procedures\UpdateCustomer.sql" />
     <Build Include="Tables\ProductColor.sql" />
-    <PostDeploy Include="Deploy\Script.PostDeployment.sql">
-      <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
-    </PostDeploy>
+    <Build Include="Stored Procedures\UpdateCustomer.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Deploy\SqlSchemaCompare.scmp" />
     <None Include="Deploy\DEV.publish.xml" />
     <None Include="Deploy\PROD.publish.xml" />
+    <None Include="Deploy\SqlSchemaCompare.scmp" />
+    <None Include="Deploy\QA.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Deploy\Script.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <SqlCmdVariable Include="Environment">

@@ -7,12 +7,10 @@ New-LocalDb "demo"
 New-LocalDb "environments"
 
 #////////////////////////////////////////////////////////////////////////////// 
-# Delete all env databases 
+# Delete all databases 
 #////////////////////////////////////////////////////////////////////////////// 
 Remove-MeAllEnvDatabases
-Remove-MeDatabase "(LocalDb)\ProjectsV13" "ExampleDb"
-Remove-MeDatabase "(LocalDb)\ProjectsV13" "Example.Db"
-Remove-MeDatabase "(LocalDb)\ProjectsV13" "Example.Db_2"
+Remove-MeAllProjectV13Databases
 
 #////////////////////////////////////////////////////////////////////////////// 
 # Create and publish to databases 

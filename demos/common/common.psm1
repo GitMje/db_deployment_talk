@@ -103,6 +103,22 @@ function Remove-MeAllEnvDatabases
     Remove-MeDatabase "(LocalDb)\environments" "Dev"
 }
 
+#////////////////////////////////////////////////////////////////////////////// 
+# Remove (Drop) all ProjectV13 Databases
+#   Usage: Remove-MeAllEnvDatabases
+#////////////////////////////////////////////////////////////////////////////// 
+function Remove-MeAllProjectV13Databases
+{
+    Remove-MeDatabase "(LocalDb)\ProjectsV13" "ExampleDb"
+    Remove-MeDatabase "(LocalDb)\ProjectsV13" "Example.Db"
+    Remove-MeDatabase "(LocalDb)\ProjectsV13" "Example.Db_1"
+    Remove-MeDatabase "(LocalDb)\ProjectsV13" "Example.Db_2"
+    Remove-MeDatabase "(LocalDb)\ProjectsV13" "AdventureWorks"
+    Remove-MeDatabase "(LocalDb)\ProjectsV13" "CannedExample"
+    Remove-MeDatabase "(LocalDb)\ProjectsV13" "Database1"
+    Remove-MeDatabase "(LocalDb)\ProjectsV13" "Database1_1"
+}
+
 
 #////////////////////////////////////////////////////////////////////////////// 
 # Remove (Drop) all Databases
@@ -111,6 +127,8 @@ function Remove-MeAllEnvDatabases
 function Remove-MeAllDatabases
 {
     Remove-MeDatabase "(LocalDb)\demo" "ExampleDb"
+    Remove-MeDatabase "(LocalDb)\demo" "AdventureWorks"
+    Remove-MeAllProjectV13Databases
     Remove-MeAllEnvDatabases
 }
 

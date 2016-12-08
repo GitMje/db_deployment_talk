@@ -2,9 +2,9 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
-    <TargetDatabaseName>Example.Db</TargetDatabaseName>
-    <DeployScriptFileName>Example.Db.Tests.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=(localdb)\demo07;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
+    <TargetDatabaseName>Dev</TargetDatabaseName>
+    <DeployScriptFileName>Dev.Tests.sql</DeployScriptFileName>
+    <TargetConnectionString>Data Source=(localdb)\environments;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
   </PropertyGroup>
   <ItemGroup>
