@@ -1,16 +1,22 @@
 ###### Basic commands:
 
-### Show active LocalDB databases 
+### To install:
+# Google for sqllocaldb.msi
+
+### Show existing LocalDB databases 
 sqllocaldb i
 
 ### Create a LocalDB database
-sqllocaldb c demo03 -s
+sqllocaldb c demo01 -s
 
-### Stop a LocalDB database
-sqllocaldb p demo03 
-
-### Delete a LocalDB database
-sqllocaldb d demo03
+### Show specific instanace LocalDB database
+sqllocaldb i demo01
 
 ## How to access from SSMS
-(localdb)\demo03
+# (localdb)\demo01
+
+### Stop a LocalDB database
+sqllocaldb p demo01 
+
+### Delete a LocalDB database
+sqllocaldb d demo01
