@@ -3,7 +3,7 @@
   <PropertyGroup>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>Dev</TargetDatabaseName>
-    <DeployScriptFileName>Example.Db.sql</DeployScriptFileName>
+    <DeployScriptFileName>Dev.sql</DeployScriptFileName>
     <TargetConnectionString>Data Source=(localdb)\environments;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
   </PropertyGroup>

@@ -1,56 +1,35 @@
-﻿#--$dbName: the name of the database to targets
-$dbName = "Dev"
-#--$dbPublishProfile: the publish profile to use when deploying
-$dbPublishProfile = "DEV.publish.xml"
+$PackageName = $OctopusParameters["PackageName"]
+$PublishProfile = $OctopusParameters["PublishProfile"]
+$BlockOnPossibleDataLoss = $OctopusParameters["BlockOnPossibleDataLoss"]
 
-#--$dbUser: the database user to use
-$dbUser = "merpenbeck"
-
-#--$dbPassword: the password for the user being used
-$dbPassword = "REDACTED"
-
-# Set params
-if (! $dbName)
+#check for errors
+if (! $PackageName)
 {
-}
-if (! $dbPublishProfile)
-{
-    Write-Host "Missing required variable dbPublishProfile" -ForegroundColor Yellow
-    exit 1
-}
-if (! $dbUser)
-{
-    Write-Host "Missing required variable dbUser" -ForegroundColor Yellow
-    exit 1
-}
-if (! $dbPassword)
-{
-    Write-Host "Missing required variable dbPassword" -ForegroundColor Yellow
+    Write-Host "Missing required variable PackageName" -ForegroundColor Yellow
     exit 1
 }
 
-#$OctopusParameters["BlockOnPossibleDataLoss"]
-$dataLoss = "False"
-$smartDefaults = "False" 
- 
-if (!$smartDefaults) {
-    Write-Host "Missing required variable smartDefaults" -ForegroundColor Yellow
+if (! $PublishProfile)
+{
+    Write-Host "Missing required variable PublishProfile" -ForegroundColor Yellow
     exit 1
 }
- 
-if (!$dataLoss) {
-    Write-Host "Missing required variable dataLoss" -ForegroundColor Yellow
+
+if (! $BlockOnPossibleDataLoss)
+{
+    Write-Host "Missing required variable BlockOnPossibleDataLoss" -ForegroundColor Yellow
     exit 1
 }
+
+#Adjust for location
+$PackageName = (Get-Location).Path + "\Content\$PackageName"
+$PublishProfile = (Get-Location).Path + "\Content\$PublishProfile"
  
-if (!$TargetConnectionString) {
-    throw "Target connection parameter missing!"   
-}
- 
-Write-Host "Deploying database now..." -NoNewline
- 
-New-Alias -Name sqlpackage -Value "C:\Program Files (x86)\Microsoft SQL Server\110\DAC\bin\sqlpackage.exe"
-sqlpackage /Action:Publish /SourceFile:"[[DACPAC_NAME]].dacpac" /tcs:$TargetConnectionString `
-    /p:GenerateSmartDefaults=$smartDefaults /p:BlockOnPossibleDataLoss=$dataLoss
- 
-Write-Host "deployed"
+Write-Host "==============================================================================="
+Write-Host "== Publish Database                                                          =="
+Write-Host "==============================================================================="
+$command = "sqlpackage.exe /Action:Publish /Sourcefile:$PackageName /Profile:'$PublishProfile' /p:BlockOnPossibleDataLoss=$BlockOnPossibleDataLoss"
+
+Write-Host "command = $command"
+
+Invoke-Expression $command

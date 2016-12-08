@@ -72,10 +72,9 @@
     <None Include="Deploy\DEV.publish.xml" />
     <None Include="Deploy\PROD.publish.xml" />
     <None Include="Deploy\SqlSchemaCompare.scmp" />
-    <None Include="Deploy.ps1">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Example.Db.nuspec" />
+    <None Include="Deploy\QA.publish.xml" />
+    <None Include="Deploy.ps1" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Deploy\Script.PostDeployment.sql" />

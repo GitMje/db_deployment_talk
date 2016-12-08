@@ -1,7 +1,7 @@
 $date = Get-Date
 $day = $date.Day
 $month = $date.Month
-$year = $date.Year
+$year = Get-Date -format "yy"
 $hour = Get-Date -format "HH"
 $min = Get-Date -format "mm"
 $sec = $a.Second

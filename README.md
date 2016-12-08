@@ -44,7 +44,8 @@ tSQLt](%3Chttps://kzhendev.wordpress.com/2014/01/08/setting-up-ssdt-database-pro
 [Introducing LocalDB, an improved SQL
 Express](https://blogs.msdn.microsoft.com/sqlexpress/2011/07/12/introducing-localdb-an-improved-sql-express/)
 
- 
+[Evaluating SQL Server Data Tools  
+](https://www.codeproject.com/articles/357905/evaluating%C2%ADsql%C2%ADserver%C2%ADdata%C2%ADtools6/24)
 
 Books:
 ------
