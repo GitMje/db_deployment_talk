@@ -1,6 +1,6 @@
-$projFile = ".\Example.Db\Example.Db\Example.Db.sqlproj"
-$dacpac = ".\Example.Db\Example.Db\bin\Output\Example.Db.dacpac"
-$publishProfile = "Example.Db\Example.Db\Deploy\DEV.publish.xml"
+$projFile = ".\Example\Example.Db\Example.Db.sqlproj"
+$dacpac = ".\Example\Example.Db\bin\Output\Example.Db.dacpac"
+$publishProfile = "Example\Example.Db\Deploy\DEV.publish.xml"
 
 Write-Host "==============================================================================="
 Write-Host "== Build DACPAC                                                              =="

@@ -71,11 +71,8 @@
   <ItemGroup>
     <None Include="Deploy\DEV.publish.xml" />
     <None Include="Deploy\PROD.publish.xml" />
-    <None Include="Deploy\SqlSchemaCompare.scmp" />
+    <None Include="Deploy\DEV.SqlSchemaCompare.scmp" />
     <None Include="Deploy\QA.publish.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="Deploy\Script.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <SqlCmdVariable Include="Environment">

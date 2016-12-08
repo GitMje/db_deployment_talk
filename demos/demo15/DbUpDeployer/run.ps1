@@ -1,4 +1,4 @@
-Import-Module ..\common\common.psm1 
+Import-Module ..\..\common\common.psm1 
  
 Remove-MeDatabase "(LocalDb)\v11.0" "DbUpExample"
 

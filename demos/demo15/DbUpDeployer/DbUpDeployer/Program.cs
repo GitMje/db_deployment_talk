@@ -14,7 +14,7 @@ namespace DbUpDeployer
                 ?? ConfigurationManager.ConnectionStrings["DbUpExample"].ConnectionString
                 ?? "Server=(LocalDB)\v11.0; Database=DbUpExample; Trusted_connection=true";
 
-            Console.WriteLine("connectionString={0}", connectionString);
+            Console.WriteLine(" connectionString={0}", connectionString);
 
             EnsureDatabase.For.SqlDatabase(connectionString);
 

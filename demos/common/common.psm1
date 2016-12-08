@@ -126,8 +126,9 @@ function Remove-MeAllProjectV13Databases
 #////////////////////////////////////////////////////////////////////////////// 
 function Remove-MeAllDatabases
 {
-    Remove-MeDatabase "(LocalDb)\demo" "ExampleDb"
-    Remove-MeDatabase "(LocalDb)\demo" "AdventureWorks"
+    Remove-MeDatabase "(LocalDb)\v11.0" "DbUpExample"
+    #Remove-MeDatabase "(LocalDb)\demo" "ExampleDb"
+    #Remove-MeDatabase "(LocalDb)\demo" "AdventureWorks"
     Remove-MeAllProjectV13Databases
     Remove-MeAllEnvDatabases
 }
