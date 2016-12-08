@@ -1,7 +1,8 @@
-Import-Module ..\common\common.psm1
+Import-Module ..\common\common.psm1 
  
-$prev = "demo07"
-$curr = "demo08"
+ 
+$prev = "demo06"
+$curr = "demo07"
  
 #////////////////////////////////////////////////////////////////////////////// 
 # LocalDB 

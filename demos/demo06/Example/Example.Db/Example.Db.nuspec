@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Example.Db</id>
+    <version>$version$</version>
+    <authors>Michael Erpenbeck</authors>
+    <description>NuGet package for DB</description>
+  </metadata>
+  <files>
+    <file src="bin\Release\Example.Db.dacpac" target="Content\Deploy" />
+    <file src="Deploy\DEV.publish.xml" target="Content" />
+    <file src="Deploy.ps1" />
+  </files>
+</package>
