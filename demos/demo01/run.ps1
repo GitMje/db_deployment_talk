@@ -9,5 +9,8 @@ Remove-MeAllDatabases
 # Stop and Delete all LocalDBs
 #////////////////////////////////////////////////////////////////////////////// 
 Remove-LocalDb "demo"
+Remove-LocalDb "demo01"
 Remove-LocalDb "environments"
+
+Start-MeSsms "ProjectsV13"
 
