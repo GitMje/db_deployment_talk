@@ -101,6 +101,9 @@ function Remove-MeAllEnvDatabases
     Remove-MeDatabase "(LocalDb)\environments" "Prod"
     Remove-MeDatabase "(LocalDb)\environments" "QA"
     Remove-MeDatabase "(LocalDb)\environments" "Dev"
+    Remove-MeDatabase "(LocalDb)\environments" "AnotherDb"
+    Remove-MeDatabase "(LocalDb)\environments" "AnotherDb_MJE"
+    Remove-MeDatabase "(LocalDb)\environments" "Dev_MJE"
 }
 
 #////////////////////////////////////////////////////////////////////////////// 

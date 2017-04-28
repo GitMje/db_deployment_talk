@@ -20,3 +20,9 @@ sqllocaldb p demo01
 
 ### Delete a LocalDB database
 sqllocaldb d demo01
+
+### Versions installed on machine
+sqllocaldb versions
+
+### Create given version
+sqllocaldb create HelloWorld 12.0.2000.8
