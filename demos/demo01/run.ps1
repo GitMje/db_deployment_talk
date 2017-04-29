@@ -13,4 +13,5 @@ Remove-LocalDb "demo01"
 Remove-LocalDb "environments"
 
 Start-MeSsms "ProjectsV13"
+Clear-Host
 
