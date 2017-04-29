@@ -9,7 +9,7 @@ sqllocaldb i
 ### Create a LocalDB database
 sqllocaldb c demo01 -s
 
-### Show specific instanace LocalDB database
+### Show specific instance LocalDB database
 sqllocaldb i demo01
 
 ## How to access from SSMS

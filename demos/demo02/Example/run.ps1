@@ -19,4 +19,5 @@ New-MeAllEnvDatabases
 # SSMS 
 #////////////////////////////////////////////////////////////////////////////// 
 Start-MeSsms "environments"
-Start-MeSsms "ProjectsV13"
+#Start-MeSsms "ProjectsV13"
+Clear-Host
