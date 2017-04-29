@@ -44,8 +44,13 @@ tSQLt](https://kzhendev.wordpress.com/2014/01/08/setting-up-ssdt-database-projec
 [Introducing LocalDB, an improved SQL
 Express](https://blogs.msdn.microsoft.com/sqlexpress/2011/07/12/introducing-localdb-an-improved-sql-express/)
 
+[LocalDB vs SQL Server Developer/Express/etc Edition](https://www.simple-talk.com/sql/sql-development/edition-sql-server-best-development-work/#6)
+
+
 [Evaluating SQL Server Data
 Tools](https://www.codeproject.com/articles/357905/evaluating%C2%ADsql%C2%ADserver%C2%ADdata%C2%ADtools6/24)
+
+[SSDT vs SSDT-BIDS](http://www.jamesserra.com/archive/2012/04/ssdt-installation-confusion/)
 
 Books:
 ------
