@@ -2,13 +2,15 @@
 
 =================
 
- ** Download PowerPoint Talk:
+ ## Download PowerPoint Talk:
+ 
+ --
  
  - [PowerPoint Talk](https://github.com/GitMje/db_deployment_talk/raw/master/_Talk.pptx)
 
 ## Tools:
 
-------
+--
 
 -   [SSDT download](http://msdn.microsoft.com/enus/data/hh297027)
 
@@ -16,7 +18,7 @@
 
 ## Free videos:
 
-------------
+--
 
 -   [The elephant in the room: Continuous Delivery for
     Databases](https://vimeo.com/131637362)
@@ -25,7 +27,7 @@
 
 ## Pluralsight courses:
 
---------------------
+--
 
 -   [Database Delivery Best
     Practices](http://www.pluralsight.com/courses/database-delivery-best-practices)
@@ -43,7 +45,7 @@
 
 ## Links:
 
-------
+--
 
 [Setting up SSDT Database Projects and
 tSQLt](https://kzhendev.wordpress.com/2014/01/08/setting-up-ssdt-database-projects-and-tsqlt/)
@@ -62,7 +64,7 @@ Tools](https://www.codeproject.com/articles/357905/evaluating%C2%ADsql%C2%ADserv
 
 ## Books:
 
-------
+--
 
 [Exploring Octopus Deploy: Deployment Automation for .NET](http://a.co/61HNN4U)[  
 Microsoft Visual Studio 2015 Unleashed ](  
