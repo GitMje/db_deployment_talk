@@ -1,4 +1,4 @@
-* Database Delivery
+# Database Delivery
 
 =================
 
@@ -6,7 +6,7 @@
  
  - [PowerPoint Talk](https://github.com/GitMje/db_deployment_talk/raw/master/_Talk.pptx)
 
-**Tools:
+## Tools:
 
 ------
 
@@ -14,7 +14,7 @@
 
  
 
-** Free videos:
+## Free videos:
 
 ------------
 
@@ -23,7 +23,7 @@
 
  
 
-** Pluralsight courses:
+## Pluralsight courses:
 
 --------------------
 
@@ -41,7 +41,7 @@
 
      
 
-** Links:
+## Links:
 
 ------
 
@@ -60,7 +60,7 @@ Tools](https://www.codeproject.com/articles/357905/evaluating%C2%ADsql%C2%ADserv
 [SSDT vs SSDT-BIDS](http://www.jamesserra.com/archive/2012/04/ssdt-installation-confusion/)
 
 
-** Books:
+## Books:
 
 ------
 
