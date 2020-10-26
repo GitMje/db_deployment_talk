@@ -1,16 +1,21 @@
-Database Delivery
+* Database Delivery
+
 =================
 
- 
+ ** Download PowerPoint Talk:
+ 
+ - [PowerPoint Talk](https://github.com/GitMje/db_deployment_talk/raw/master/_Talk.pptx)
 
-Tools:
+**Tools:
+
 ------
 
 -   [SSDT download](http://msdn.microsoft.com/enus/data/hh297027)
 
  
 
-Free videos:
+** Free videos:
+
 ------------
 
 -   [The elephant in the room: Continuous Delivery for
@@ -18,7 +23,8 @@ Free videos:
 
  
 
-Pluralsight courses:
+** Pluralsight courses:
+
 --------------------
 
 -   [Database Delivery Best
@@ -35,7 +41,8 @@ Pluralsight courses:
 
      
 
-Links:
+** Links:
+
 ------
 
 [Setting up SSDT Database Projects and
@@ -52,7 +59,9 @@ Tools](https://www.codeproject.com/articles/357905/evaluating%C2%ADsql%C2%ADserv
 
 [SSDT vs SSDT-BIDS](http://www.jamesserra.com/archive/2012/04/ssdt-installation-confusion/)
 
-Books:
+
+** Books:
+
 ------
 
 [Exploring Octopus Deploy: Deployment Automation for .NET](http://a.co/61HNN4U)[  
